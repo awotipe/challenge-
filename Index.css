@@ -7,16 +7,17 @@
     box-sizing: border-box;
 }
 .container{
-    background-image: url("./Background.png"), linear-gradient(to bottom, transparent 0,white 30%);
+    background-image: url("./Background.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     width: 100%;
-    height: 100vh;
+    /* height: 100%; */
     margin: auto;
     
 }
 .header{
     width: 100%;
+    
 }
 
 
@@ -76,53 +77,59 @@
 
 .section{
     margin: auto;
-    width: 90%;
+    height: 30rem;
+    width: 100%;    
+}
+
+.section-container {
+
+    width: 100%;
+    height: 27rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    
 }
 
-/* .img-text {
-    flex: 1.5;
-} */
-
-.subsection{
-    width: 90%
-    flex: 1;
+.section-left{
+    width: 50%;
+    height: 27rem;
     letter-spacing: 20%;
 }
-.subsection h1{
-    text-decoration: none;
-    font-style: bold;
+
+.section-right {
+    width: 50%;
+    height: 27rem;
+    background-image: url(/Burna.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6px;
+}
+.section-left h1{
+    font-weight: 500;
     font-family: 'Signika', sans-serif;
-    font-size: 32px;
-    text-align: left;
+    font-size: 3rem;
     line-height: 40px;
-    letter-spacing: 30;
-    vertical-align: top;
     color: #FFFFFF;
-    padding: 15px;
-    width: 100%;
-    justify-content: space-between;
+    padding: 50px 0px 20px 60px;
 }
 
-.subsection p{
-    font-size: 14;
-    color: #FFFFFF;
-    padding: 15PX;
-    text-align: left;
+.section-left p{
+    font-size: 15px;
+    word-spacing: 10px;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    padding: 0px 100px 40px 60px;
+    line-height: 25px;
     font-style: normal;
 }
 
 .form1{
-    padding: 15px;
+    padding: 10px 60px;
 }
 .form1>input{
     width: 60%;
 }
-.subsection input{
+.section-left input{
     border: none;
     color:  #080808;
     padding: 10px;
@@ -133,7 +140,7 @@
     width: 70;
 
 }
-.subsection button{
+.section-left button{
     background-color: #db592a;
     border: none;
     color:  #FFFFFF;
@@ -147,36 +154,24 @@
     border-radius: 5px;
 }
 
-.bg-text{
-    background-color: rgb(0,0,0);
-    background-color: rgba(87, 82, 82, 0.4); 
-    color: white;
-    display: flex;
-    top: 45%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 20%;
-    padding: 20px;
-    text-align: center;
-    display: inline;
-    position: absolute;
-  }
 
-.bg-text p{
-    text-decoration: none;
+.bg-text{
+    /* background-color: rgb(0,0,0); */
+    /* background-color: rgba(87, 82, 82, 0.4);  */
     font-size: 13px;
     color: gray;
     font-family: 'Sen', sans-serif;
     text-align: left;
-}
+    height: 5px
+    margin-top: 800px;
+    /* transform: translate(-50%, -50%); */
+    /* z-index: 1; */
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+    /* position: absolute;  */
+    display: flex;
+    display: inline;
 
-.img2{
-    width: 473px;
-    opacity: 0.075;
-    top: 50%;
-    right: 110%;
-    
 }
 
 .btns-1{
@@ -187,14 +182,14 @@
     text-decoration: none;
     display: inline;
     font-size: 12px;
-    margin: 6px 2px;
+    margin: 140px auto;
     font-family: 'Sen', sans-serif;
     border-radius: 5px;
-    /* border-color: none; */
+    border-color: none; 
     display: flex;
     top: 55%;
     left: 77%;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .footerdiv{
@@ -223,3 +218,218 @@
 
 
 }
+
+
+@media screen and (max-width: 1024px) {
+
+    .bg-text {
+        top: 35%;
+        left: 75%;
+    }
+
+    .btns-1 {
+        top: 45%;
+        left: 71%;
+    }
+
+    .footerdiv {
+        margin: 170px 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        background-image: url("./Background.png"), linear-gradient(to bottom, transparent 0,white 30%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+     }
+
+     .innercontainer{
+        margin: auto;
+        width: 90%;
+        height: 100%;
+    }
+
+    .navbar {
+        width: 431px;
+    }
+    .section{
+        margin: auto;
+        height: 30rem;
+        width: 100%;    
+    }
+    
+    .section-container {
+    
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .section-left{
+        width: 50%;
+        height: 20rem;
+        letter-spacing: 20%;
+    }
+    
+    .section-right {
+        width: 50%;
+        height: 20rem;
+        background-image: url(/Burna.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .section-left h1{
+        font-weight: 500;
+        font-family: 'Signika', sans-serif;
+        font-size: 1.5rem;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding: 15px 0px 20px 50px;
+    }
+    
+    .section-left p{
+        font-size: 12px;
+        word-spacing: 10px;
+        font-family: 'roboto', sans-serif;
+        color: #fff;
+        padding: 0px 60px 30px 50px;
+        line-height: 18px;
+        font-style: normal;
+    }
+    
+    .form1{
+        padding: 10px 50px;
+    }
+    .form1>input{
+        width: 60%;
+    }
+    .section-left input{
+        border: none;
+        color:  #080808;
+        padding: 10px;
+        text-align: left;
+        font-size: 12px;
+        font-family: 'Sen', sans-serif;
+        border-radius: 5px;
+        width: 70;
+    
+    }
+    .section-left button{
+        background-color: #db592a;
+        border: none;
+        color:  #FFFFFF;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline;
+        font-size: 12px;
+        margin: 6px 2px;
+        font-family: 'Sen', sans-serif;
+        border-radius: 5px;
+    }
+    
+    .footerdiv{
+        text-align: center;
+        color: #FFFFFF;
+        font-family: 'Sen', sans-serif;
+        font-size: 9px;
+        display: flex;
+        margin: 80px 60px;
+        width: auto;
+        justify-content: space-between;
+      
+    }
+
+    }
+
+    @media screen and (max-width: 425px) {
+    
+        .container{
+
+            height: 55rem;
+            
+            
+        }
+        .header{
+            width: 100%;
+            height: 5rem;
+        }
+
+
+        .navbar {
+          display: none;
+        }
+        
+        .header {
+            width: 100%;
+            height: 5rem;
+        }
+
+        .section-container {
+            width: 100%;
+            height: 43rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .section-left{
+            width: 100%;
+            height: 25rem;
+            letter-spacing: 20%;
+        }
+        
+        .section-right {
+            width: 100%;
+            height: 20rem;
+            background-image: url(/Burna.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .section-left h1{
+            font-weight: 500;
+            font-family: 'Signika', sans-serif;
+            font-size: 1.5rem;
+            line-height: 35uhpx;
+            color: #FFFFFF;
+            padding: 15px 0px 20px 0px;
+            text-align: center;
+        }
+        
+        .section-left p{
+            padding: 10px 40px;
+            line-height: 22px;
+            font-style: normal;
+            text-align: center;
+        }
+        
+        .form1{
+            padding: 20px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form1>input{
+            width: 100%;
+            margin: 0px  0px 10px 0px;
+        }
+        .section-left input{
+            border: none;
+            color:  #080808;
+            padding: 10px;
+            text-align: left;
+            font-size: 12px;
+            font-family: 'Sen', sans-serif;
+            border-radius: 5px;
+            width: 70;
+        
+        }
+
+       
+    }
